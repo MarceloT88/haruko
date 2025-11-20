@@ -1,31 +1,28 @@
-:root {
-  --color-lila: #9B59B6;
-  --color-turquesa: #1ABC9C;
-  --color-naranja: #E67E22;
-  --color-texto: #000000;
-}
-
 body {
-  background-color: var(--color-lila);
-  color: var(--color-texto);
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: #fff;
 }
 
 header {
-  background-color: var(--color-turquesa);
   padding: 20px;
+  background: #333;
 }
 
 button {
-  background-color: var(--color-naranja);
-  color: var(--color-texto);
-  border: none;
   padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
   border-radius: 8px;
+  background: #ff9800;
+  color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: var(--color-turquesa);
-  color: white;
+  background: #e68900;
 }
