@@ -75,4 +75,9 @@ section h2 {
 /* Carrusel - estandarizar imágenes */
 .carousel-inner img {
   width: 100%;              /* ocupa todo el ancho disponible */
-  max-width:
+  max-width: 1080px;
+  height: 300px;       /* ajusta a 250/350 según prefieras */
+  object-fit: cover;
+  border-radius: 8px;
+  position: relative;
+}
