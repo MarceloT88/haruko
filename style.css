@@ -96,3 +96,8 @@ section h2 {
   object-fit: cover;    /* recorta manteniendo proporción */
   border-radius: 0;     /* sin bordes redondeados para pantalla completa */
 }
+p{
+    text-align: left;
+    text-size-adjust: inherit;
+    text-anchor: middle;
+}
