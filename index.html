@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,25 +11,33 @@
     /* Carrusel pantalla completa */
     .carousel-item img {
       width: 100%;
-      height: 80vh;          /* ocupa el 80% de la altura de la ventana */
-      object-fit: cover;     /* recorta manteniendo proporción */
+      height: 80vh;
+      /* ocupa el 80% de la altura de la ventana */
+      object-fit: cover;
+      /* recorta manteniendo proporción */
     }
+
     .carousel-caption {
-      background: rgba(0,0,0,0.5); /* fondo semitransparente para legibilidad */
+      background: rgba(0, 0, 0, 0.5);
+      /* fondo semitransparente para legibilidad */
       border-radius: 8px;
       padding: 10px;
     }
+
     body {
-      padding-top: 70px; /* espacio para que el contenido no quede debajo del navbar fijo */
+      padding-top: 70px;
+      /* espacio para que el contenido no quede debajo del navbar fijo */
     }
   </style>
 </head>
+
 <body>
   <!-- Navbar fijo -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Mi App</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Menú">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Menú">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarContent">
@@ -47,7 +56,8 @@
           </li>
           <!-- Dropdown para Sección 4 -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Sección 4
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -68,7 +78,8 @@
     <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <!-- Indicadores -->
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Imagen 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Imagen 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Imagen 3"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Imagen 4"></button>
@@ -76,47 +87,55 @@
 
       <!-- Items -->
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <<div class="carousel-item active">
           <img src="src/img/cara1.jpeg" alt="Imagen 1">
-          <div class="carousel-caption text-start">
+          <div class="carousel-caption">
             <p>Pagar con el infierno es una cosa. Pero ¿Quieres Poseerlo?</p>
           </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="src/img/cara2.jpeg" alt="Imagen 2">
+        <div class="carousel-caption">
+          <h5>Imagen 2</h5>
+          <p>Texto descriptivo de la segunda imagen.</p>
         </div>
-        <div class="carousel-item">
-          <img src="src/img/cara2.jpeg" alt="Imagen 2">
-          <div class="carousel-caption">
-            <h5>Imagen 2</h5>
-            <p>Texto descriptivo de la segunda imagen.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="src/img/cara3.jpeg" alt="Imagen 3">
-          <div class="carousel-caption text-end">
-            <p>"A coward judges all he sees by what he is." Stephen King, The Dark Tower</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="src/img/cara4.jpeg" alt="Imagen 4">
-          <div class="carousel-caption text-end">
-            <h5>Imagen 4</h5>
-            <p>Texto descriptivo de la cuarta imagen.</p>
-          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="src/img/cara3.jpeg" alt="Imagen 3">
+        <div class="carousel-caption">
+          <p>"A coward judges all he sees by what he is." Stephen King, The Dark Tower</p>
         </div>
       </div>
 
-      <!-- Controles -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
+      <div class="carousel-item">
+        <img src="src/img/cara4.jpeg" alt="Imagen 4">
+        <div class="carousel-caption">
+          <p>Texto descriptivo de la cuarta imagen.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="src/img/peque1.png" alt="Imagen 5">
+        <div class="carousel-caption">
+          <p>Texto descriptivo de la cuarta imagen.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
     </div>
   </main>
 
   <!-- Bootstrap JS bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
